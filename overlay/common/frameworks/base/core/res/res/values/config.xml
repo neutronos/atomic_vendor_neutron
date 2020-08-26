@@ -35,7 +35,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
-    <string name="config_mms_user_agent">LineageOS</string>
+    <string name="config_mms_user_agent">NeutronOS</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Enable lockscreen rotation by default -->
@@ -86,4 +86,7 @@
          Example: "com.android.wellbeing"
      -->
     <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
+
+        <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 </resources>
