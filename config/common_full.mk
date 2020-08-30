@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MarkupGoogle \
 	Walldrops \
-	Longshot \
 	ScreenRecorder
 
 # Markup Google
