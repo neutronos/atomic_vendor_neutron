@@ -16,3 +16,12 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+# Google Markup
+PRODUCT_PACKAGES += \
+    MarkupGoogle 
+
+# Markup Google
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lineage/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
