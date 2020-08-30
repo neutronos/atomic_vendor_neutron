@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     fonts_customization.xml \
     LineageLatoFont \
     LineageRubikFont
-
+	
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
