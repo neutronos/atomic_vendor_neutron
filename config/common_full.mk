@@ -12,15 +12,13 @@ PRODUCT_PACKAGES += \
     fonts_customization.xml \
     LineageLatoFont \
     LineageRubikFont
-	
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
 
-# Google Markup
+# Neutron apps
 PRODUCT_PACKAGES += \
-    MarkupGoogle 
-	Walldrops
+    MarkupGoogle \
+	Walldrops \
+	Longshot \
+	ScreenRecorder
 
 # Markup Google
 PRODUCT_COPY_FILES += \
