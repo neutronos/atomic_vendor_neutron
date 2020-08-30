@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
 # Google Markup
 PRODUCT_PACKAGES += \
     MarkupGoogle 
+	Walldrops
 
 # Markup Google
 PRODUCT_COPY_FILES += \
