@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
 # FontOverlays
 PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
-	FontOnePlusSlateOverlay \
+	FontOneplusSlateOverlay \
 	FontPoppinsOverlay \
 	FonSFProOverlay
 

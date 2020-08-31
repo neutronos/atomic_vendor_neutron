@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Google Sans -->
-    <string name="font_google_sans_overlay" translatable="false">Sans Serif / Google Sans</string>
+    <string name="font_SFPro_overlay" translatable="false">Sans Serif / Google Sans</string>
 </resources>

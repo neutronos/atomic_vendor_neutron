@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Slate -->
-    <string name="font_poppins_overlay" translatable="false">Slate / Roboto</string>
+    <string name="font_slate_overlay" translatable="false">Slate / Roboto</string>
 </resources>
