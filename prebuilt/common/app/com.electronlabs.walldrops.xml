@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <privapp-permissions package="com.electronlabs.walldrops">
+        <permission name="android.permission.SET_WALLPAPER"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  </privapp-permissions>
