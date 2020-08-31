@@ -13,6 +13,13 @@ PRODUCT_PACKAGES += \
     LineageLatoFont \
     LineageRubikFont
 
+# FontOverlays
+PRODUCT_PACKAGES += \
+    FontGoogleSansOverlay \
+	FontOnePlusSlateOverlay \
+	FontPoppinsOverlay \
+	FonSFProOverlay
+
 # Neutron apps
 PRODUCT_PACKAGES += \
     MarkupGoogle \
