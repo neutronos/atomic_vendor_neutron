@@ -28,3 +28,15 @@ PRODUCT_PACKAGES += \
     SlateForOnePlus-Book.ttf \
     SlateForOnePlus-Medium.ttf \
     SlateForOnePlus-Regular.ttf
+
+# SFPro Text
+PRODUCT_PACKAGES += \
+    SFProText-Bold.ttf \
+    SFProText-Medium.ttf \
+    SFProText-Regular.ttf
+
+# SFPro Text
+PRODUCT_PACKAGES += \
+    Poppins-SemiBold.otf \
+    Poppins-Medium.otf \
+    Poppins-Regular.otf	
