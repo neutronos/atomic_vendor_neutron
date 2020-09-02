@@ -1,4 +1,4 @@
-# Inherit common mobile Lineage stuff
+# Inherit common mobile neutron stuff
 $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds

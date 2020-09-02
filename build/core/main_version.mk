@@ -4,22 +4,24 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# NEUTRON System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.neutron.version=$(NEUTRON) \
+    ro.neutron.releasetype=$(NEUTRON_BUILDTYPE) \
+    ro.neutron.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(RR_VERSION) \
+    ro.lineagelegal.url=https://lineageos.org/legal \
+	neutron.ota.version= $(shell date +%Y%m%d) \
+    ro.neutron.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
-# LineageOS Platform Display Version
+# NEUTRON Platform Display Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.neutron.display.version=$(NEUTRON_VERSION)
 
-# LineageOS Platform SDK Version
+# NEUTRON Platform SDK Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.neutron.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# NEUTRON Platform Internal Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.neutron.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
