@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     Profiles \
+	P404Launcher \
     WeatherProvider
 
 # Accents
