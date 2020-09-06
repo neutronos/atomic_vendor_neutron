@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2
 
-# Lineage packages
+# Neutron packages
 PRODUCT_PACKAGES += \
     AudioFX \
     Backgrounds \
@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     Profiles \
-    TrebuchetQuickStep \
     WeatherProvider
 
 # Accents
