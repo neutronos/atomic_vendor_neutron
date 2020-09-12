@@ -24,8 +24,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MarkupGoogle \
 	Walldrops \
-	ScreenRecorder \
-	PhotosGo
+	ScreenRecorder
 
 # Markup Google
 PRODUCT_COPY_FILES += \
