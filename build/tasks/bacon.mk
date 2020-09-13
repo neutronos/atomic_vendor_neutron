@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Neutron OTA update package
 
-NEUTRON_TARGET_PACKAGE := $(PRODUCT_OUT)/Neutron-$(NEUTRON_VERSION).zip
+NEUTRON_TARGET_PACKAGE := $(PRODUCT_OUT)/$(NEUTRON_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
