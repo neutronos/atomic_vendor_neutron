@@ -47,6 +47,7 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
+ifeq ($(BUILD_WITH_GAPPS),false)
 include $(CLEAR_VARS)
 LOCAL_MODULE := MarkupGoogle
 LOCAL_SRC_FILES := app/MarkupGoogle.apk
@@ -57,6 +58,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 LOCAL_MULTILIB := both
 include $(BUILD_PREBUILT)
+endif
 
 include $(CLEAR_VARS)
 LOCAL_MODULE        := Walldrops
