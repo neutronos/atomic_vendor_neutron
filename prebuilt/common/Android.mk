@@ -69,12 +69,12 @@ LOCAL_CERTIFICATE   := platform
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MULTILIB := both
-LOCAL_REQUIRED_MODULES := app/com.electronlabs.walldrops.xml
+LOCAL_REQUIRED_MODULES := apps/com.electronlabs.walldrops.xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.electronlabs.walldrops.xml
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
-LOCAL_SRC_FILES := app/com.electronlabs.walldrops.xml
+LOCAL_SRC_FILES := apps/com.electronlabs.walldrops.xml
 include $(BUILD_PREBUILT)
