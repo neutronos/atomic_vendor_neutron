@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_x86_64.mk)
+$(call inherit-product, build/target/product/aosp_arm.mk)
 
-include vendor/pixys/build/target/product/lineage_generic_target.mk
+include vendor/neutron/build/target/product/lineage_generic_target.mk
 
-PRODUCT_NAME := pixys_x86_64
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_USES_64_BIT_BINDER := true
+
+PRODUCT_NAME := neutron_arm

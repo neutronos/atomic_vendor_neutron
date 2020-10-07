@@ -3,13 +3,13 @@ ifeq ($(WITH_LINEAGE_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.lineage
 endif
 
-include vendor/pixys/config/BoardConfigKernel.mk
+include vendor/neutron/config/BoardConfigKernel.mk
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include vendor/pixys/config/BoardConfigQcom.mk
+include vendor/neutron/config/BoardConfigQcom.mk
 endif
 
-include vendor/pixys/config/BoardConfigSoong.mk
+include vendor/neutron/config/BoardConfigSoong.mk
 
 ifneq ($(TARGET_USES_PREBUILT_CAMERA_SERVICE), true)
 PRODUCT_SOONG_NAMESPACES += \

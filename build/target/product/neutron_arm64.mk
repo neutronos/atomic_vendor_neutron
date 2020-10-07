@@ -14,8 +14,8 @@
 
 $(call inherit-product, build/target/product/aosp_arm64.mk)
 
-include vendor/pixys/build/target/product/lineage_generic_target.mk
+include vendor/neutron/build/target/product/lineage_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := pixys_arm64
+PRODUCT_NAME := neutron_arm64

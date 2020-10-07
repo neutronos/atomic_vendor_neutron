@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Rules for QCOM targets
-include $(TOPDIR)vendor/pixys/build/core/qcom_target.mk
+include $(TOPDIR)vendor/neutron/build/core/qcom_target.mk
 
 # We modify several neverallows, so let the build proceed
 ifneq ($(TARGET_BUILD_VARIANT),user)

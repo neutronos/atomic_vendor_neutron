@@ -14,8 +14,8 @@
 
 $(call inherit-product, build/target/product/aosp_x86.mk)
 
-include vendor/pixys/build/target/product/lineage_generic_target.mk
+include vendor/neutron/build/target/product/lineage_generic_target.mk
 
 TARGET_USES_64_BIT_BINDER := true
 
-PRODUCT_NAME := pixys_x86
+PRODUCT_NAME := neutron_x86

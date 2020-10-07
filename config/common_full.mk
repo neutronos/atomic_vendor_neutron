@@ -1,5 +1,5 @@
 # Inherit common PixysOS stuff
-$(call inherit-product, vendor/pixys/config/common.mk)
+$(call inherit-product, vendor/neutron/config/common.mk)
 
 PRODUCT_SIZE := full
 

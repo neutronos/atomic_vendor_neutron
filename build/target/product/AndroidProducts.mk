@@ -15,13 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixys_arm.mk \
-    $(LOCAL_DIR)/pixys_arm64.mk \
-    $(LOCAL_DIR)/pixys_x86.mk \
-    $(LOCAL_DIR)/pixys_x86_64.mk
+    $(LOCAL_DIR)/neutron_arm.mk \
+    $(LOCAL_DIR)/neutron_arm64.mk \
+    $(LOCAL_DIR)/neutron_x86.mk \
+    $(LOCAL_DIR)/neutron_x86_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixys_arm-userdebug \
-    pixys_arm64-userdebug \
-    pixys_x86-userdebug \
-    pixys_x86_64-userdebug
+    neutron_arm-userdebug \
+    neutron_arm64-userdebug \
+    neutron_x86-userdebug \
+    neutron_x86_64-userdebug

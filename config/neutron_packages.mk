@@ -9,8 +9,8 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pixys/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/pixys/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/neutron/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/neutron/overlay/common
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \

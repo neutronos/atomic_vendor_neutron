@@ -1,4 +1,4 @@
-function __print_pixys_functions_help() {
+function __print_neutron_functions_help() {
 cat <<EOF
 Additional PIXYS functions:
 - gerrit:          Adds a remote for PixysOS Gerrit
@@ -8,7 +8,7 @@ EOF
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/pixys/build/tools/repopick.py $@
+    $T/vendor/neutron/build/tools/repopick.py $@
 }
 
 function gerrit()

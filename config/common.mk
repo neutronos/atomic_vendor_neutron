@@ -1,15 +1,15 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-include vendor/pixys/build/core/pixys_version.mk
+include vendor/neutron/build/core/neutron_version.mk
 
--include vendor/pixys/config/pixys_permissions.mk
--include vendor/pixys/config/pixys_packages.mk
+-include vendor/neutron/config/neutron_permissions.mk
+-include vendor/neutron/config/neutron_packages.mk
 
 # Pixys Theme
 #include vendor/PixysTheme/config.mk
 
 # Bootanimation
-include vendor/pixys/bootanimation/bootanimation.mk
+include vendor/neutron/bootanimation/bootanimation.mk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -42,15 +42,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/pixys/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/pixys/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/pixys/prebuilt/common/bin/50-pixys.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-pixys.sh
+    vendor/neutron/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/neutron/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/neutron/prebuilt/common/bin/50-pixys.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-pixys.sh
 
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
-    vendor/pixys/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
-    vendor/pixys/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
-    vendor/pixys/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+    vendor/neutron/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/neutron/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/neutron/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
@@ -67,17 +67,17 @@ PRODUCT_COPY_FILES += \
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
-    vendor/pixys/config/permissions/pixys-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/pixys-hiddenapi-package-whitelist.xml
+    vendor/neutron/config/permissions/pixys-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/pixys-hiddenapi-package-whitelist.xml
 
 # Include AOSP audio files
-include vendor/pixys/config/aosp_audio.mk
+include vendor/neutron/config/aosp_audio.mk
 
 # Include Lineage audio files
-include vendor/pixys/config/pixys_audio.mk
+include vendor/neutron/config/neutron_audio.mk
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-include vendor/pixys/config/twrp.mk
+include vendor/neutron/config/twrp.mk
 endif
 
 # Do not include art debug targets
@@ -105,4 +105,4 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardAodOverlay
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/pixys/config/partner_gms.mk
+-include vendor/neutron/config/partner_gms.mk

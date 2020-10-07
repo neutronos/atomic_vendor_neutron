@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+$(call inherit-product, build/target/product/aosp_x86_64.mk)
 
-PRODUCT_COPY_FILES += \
-    device/generic/goldfish/data/etc/permissions/privapp-permissions-goldfish.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-goldfish.xml \
+include vendor/neutron/build/target/product/lineage_generic_target.mk
 
-# Allow building otatools
-TARGET_FORCE_OTA_PACKAGE := true
-
-PRODUCT_SDK_ADDON_NAME := pixys
-PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
+PRODUCT_NAME := neutron_x86_64
