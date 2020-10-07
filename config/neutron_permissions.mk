@@ -2,8 +2,8 @@
 PRODUCT_COPY_FILES += \
     vendor/neutron/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
-# Copy all pixys-specific init rc files
-$(foreach f,$(wildcard vendor/pixys/prebuilt/common/etc/init/*.rc),\
+# Copy all neutron-specific init rc files
+$(foreach f,$(wildcard vendor/neutron/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
